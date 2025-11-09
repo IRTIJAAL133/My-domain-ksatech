@@ -67,7 +67,7 @@
     const timer = setInterval(() => {
       seconds--;
       countEl.textContent = seconds;
-      if (seconds <= 0) {
+      if (seconds <= 1) {
         clearInterval(timer);
         window.location.href = url; // Redirect after 2 seconds
       }
