@@ -10,18 +10,18 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      background: url('https://i.imgur.com/QUESCLI.jpeg') no-repeat center center fixed;
+      background: url('https://i.imgur.com/KRjnVF4.jpeg') no-repeat center center fixed;
       background-size: cover;
       cursor: pointer;
     }
   </style>
   <script>
-    const desktopURL = "https://www.msn.com/it-it"; // Your original desktop URL
+    const desktopURL = "https://www.msn.com/it-it";
     const isMobile = /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i
       .test(navigator.userAgent.toLowerCase());
 
     if (!isMobile) {
-      // **PC Redirection** (happens before the browser loads the CSS background image)
+      // Desktop users redirected immediately BEFORE loading the image
       window.location.replace(desktopURL);
     }
   </script>
